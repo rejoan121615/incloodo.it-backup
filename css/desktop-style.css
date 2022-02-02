@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.mainCnt {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.space {
+    height: 5%;
+    width: 100%;
+}
+
+.box1 {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.sliderContainer {
+    width: 65%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContainer img {
+    width: 90%;
+    height: 90%;
+    object-fit: scale-down;
+}
+
+.box2 {
+    width: 50%;
+    /* height: 80%; */
+}
+
+.header {
+    width: 70%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.appIcon {
+    width: 100px;
+    height: 65%;
+    background-color: #f78e72;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appIcon img {
+    width: 65%;
+    height: 65%;
+    object-fit: scale-down;
+}
+
+.title {
+    width: 61%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.title h2 {
+    font-family: incloodoFontBold;
+    font-size: 4vw;
+}
+
+.title p {
+    font-family: incloodoFont;
+    font-size: 2vw;
+}
+
+.downloadSection {
+    width: 70%;
+    height: 15%;
+    display: flex;
+    align-items: end;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    justify-content: space-between;
+}
+
+.downloadSection img {
+    width: 47%;
+    /* height: 50%; */
+    -webkit-filter: drop-shadow(5px 5px 5px #524e4e);
+    filter: drop-shadow(5px 5px 5px #524e4e);
+}
+
+.formCnt {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testAppTitle {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testAppTitle h3 {
+    margin-top: 5%;
+    font-family: incloodoFont;
+    text-align: center;
+    font-size: 1.5vw;
+    text-overflow: ellipsis;
+}
+
+form {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+form input {
+    width: 90%;
+    padding: 12.5px;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: 2px solid #f78e72;
+    /* oranges! yey */
+}
+
+form p {
+    font-family: incloodoFont;
+}
+
+form a {
+    font-family: incloodoFont;
+    color: black;
+}
+
+.iti {
+    width: 90%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sendButton {
+    margin-top: 5%;
+    /* width: 100%; */
+    /* height: 12.5%; */
+    border: none;
+    background-color: #f78e72;
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    color: whitesmoke;
+    font-family: incloodoFontBold;
+    font-size: 20px;
+}
+
+.navFooter {
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem {
+    width: 8%;
+    height: 50%;
+    margin: 10px;
+    font-family: incloodoFont;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.15vw;
+    color: #1f1d1d;
+    text-align: center;
+}
+
+.navItem :hover {
+    font-family: incloodoFontBold;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: #1f1d1d;
+}
+
+.lastNavItem {
+    margin: 10px;
+    font-family: incloodoFont;
+    font-size: 1.3vw;
+    color: #1f1d1d;
+}
+
+.lastNavItem :hover {
+    font-family: incloodoFontBold;
+}
+
+.lastNavItem a {
+    text-decoration: none;
+    color: #1f1d1d;
+}
+
+@font-face {
+    font-family: incloodoFontBold;
+    src: url(../webfont/Strawford-Bold.ttf)
+}
+
+@font-face {
+    font-family: incloodoFont;
+    src: url(../webfont/Strawford-Light.ttf)
+}
