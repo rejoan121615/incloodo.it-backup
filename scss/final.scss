@@ -1,0 +1,864 @@
+/* new style by rej  */
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$mxl: 1800px;
+
+@mixin resp($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+body {
+    overflow-x: hidden;
+    @include resp($xl) {
+        min-height: 100vh;
+    }
+}
+
+section {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    @include resp($sm) {
+        max-width: 540px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    @include resp($md) {
+        max-width: 720px;
+    }
+    @include resp($lg) {
+        max-width: 960px;
+    }
+    @include resp($xl) {
+        max-width: 1140px;
+    }
+    @include resp($xxl) {
+        max-width: 1320px;
+    }
+    @include resp($mxl) {
+        max-width: 1700px;
+    }
+}
+
+// fonts
+@font-face {
+    font-family: "Strawford-Bold";
+    src: url("../webfont/Strawford-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Strawford-Regular";
+    src: url("../webfont/Strawford-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Strawford-Light";
+    src: url("../webfont/Strawford-Light.ttf") format("truetype");
+}
+
+/* header  */
+header {
+    width: 100%;
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 6px 2.5px #66666629;
+}
+
+header .container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    @include resp($sm) {
+        padding: 15px 0px;
+    }
+    @include resp($xl) {
+        width: 90%;
+        padding: 12.5px 0px;
+        height: 100%;
+    }
+    @include resp($xxl) {
+        padding: 18px 0px;
+    }
+
+    .resp__btn__wrap {
+        order: 5;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        width: 45px;
+        height: 45px;
+        @include resp($xl) {
+            display: none;
+        }
+        .ham {
+            transform: scale(0.18) translate(-215px, -300px);
+            @include resp($sm) {
+                transform: scale(0.22) translate(-195px, -245px);
+            }
+        }
+    }
+    // responsive navbar
+    .res__navbar {
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        top: 65px;
+        @include resp($sm) {
+            top: 75px;
+        }
+        @include resp($xl) {
+            display: none;
+        }
+        // background-color: rgba(75, 75, 75, 0.5);
+        background-color: white;
+        position: absolute;
+        left: 0px;
+        transform: translateX(-100%);
+        transition: transform 0.6s ease-in-out;
+        .top_wrap {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            // brand
+            .brand {
+                width: initial;
+            }
+            // social bar
+            .social__link {
+                display: flex;
+            }
+        }
+        .brand,
+        #resp__btn {
+            padding: 10px;
+            cursor: pointer;
+            svg {
+                width: 25px;
+            }
+        }
+
+        // cross
+        #resp__btn {
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+    .animate__nav {
+        transform: translateX(0%);
+    }
+
+    // navigation links
+    .resp__nav__items {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 60px;
+        .navItem {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-bottom: 1px dotted #484848;
+            font-size: 1.3rem;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+/* brand  */
+.brand {
+    width: 40px;
+    @include resp($xl) {
+        width: 55px;
+    }
+}
+.brand a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brand a img {
+    width: 25px;
+    @include resp($sm) {
+        width: 30px;
+    }
+    @include resp($md) {
+        width: 35px;
+    }
+    @include resp($xl) {
+        width: 40px;
+    }
+}
+
+/* social icon  */
+.social__link {
+    // display: none;
+    // @include resp($xl) {
+    order: 3;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    padding: 5px 6px;
+    // }
+}
+
+.social__link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    color: #1f1d1d;
+    font-size: 0.5rem;
+    @include resp($sm) {
+        width: 30px;
+        height: 30px;
+    }
+    @include resp($lg) {
+        font-size: 0.6rem;
+        width: 35px;
+        height: 35px;
+    }
+    @include resp($xl) {
+        font-size: 0.6rem;
+        width: 35px;
+        height: 35px;
+    }
+    @include resp($xxl) {
+        width: 40px;
+        height: 40px;
+    }
+    transition: all 0.4s ease-in-out;
+    &:nth-child(2) {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
+
+.social__link a:hover {
+    background-color: #1f1d1d;
+    color: white;
+}
+
+/* navbar  */
+.header__nav {
+    display: none;
+    @include resp($xl) {
+        display: flex;
+        flex-flow: row wrap;
+        width: 75%;
+        height: 50px;
+    }
+    @include resp($xxl) {
+        width: 70%;
+    }
+    @include resp($mxl) {
+        width: 65%;
+    }
+}
+
+.navItem {
+    font-family: incloodoFontBold;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.header__nav .navItem {
+    // flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        background-color: #1f1d1d;
+        bottom: 0px;
+        transition: width 0.4s ease-in-out;
+    }
+    // navbar animation
+    &:hover::after {
+        width: 100%;
+    }
+    &:nth-child(1) {
+        width: 14%;
+        @include resp($xl) {
+            width: 13%;
+        }
+    }
+    &:nth-child(2) {
+        width: 21%;
+    }
+    &:nth-child(3) {
+        width: 21%;
+        @include resp($xl) {
+            width: 22%;
+        }
+    }
+    &:nth-child(4) {
+        width: 19%;
+    }
+    &:nth-child(5) {
+        width: 12%;
+    }
+    &:nth-child(6) {
+        width: 13%;
+    }
+    // anchore tag style
+    a {
+        // color: #1f1d1d;
+        font-family: Strawford-Regular;
+        font-weight: 600;
+        width: 100%;
+        color: #5a5a5a;
+        transition: color 0.4s ease-in-out;
+        font-size: 1.1rem;
+    }
+    &:hover a {
+        color: #1f1d1d;
+    }
+}
+
+// main container
+.mainCnt {
+    height: initial;
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-flow: column wrap;
+        @media only screen and (max-width: 575px) {
+            max-width: 320px;
+        }
+        @include resp($lg) {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        @include resp($xl) {
+            max-width: 1250px;
+            align-items: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+
+    // slider box
+    .slider__box {
+        margin-top: 45px;
+        order: 5;
+        @include resp($lg) {
+            width: 50%;
+            margin-top: 0px;
+            order: 2;
+        }
+    }
+    .sliderContainer {
+        text-align: center;
+        img {
+            @include resp($xl) {
+                width: 32vh;
+                min-width: 230px;
+            }
+            @include resp($xxl) {
+                max-width: 380px;
+            }
+        }
+
+        .slider {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+    // context box
+    .content__box {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        order: 3;
+        @include resp($sm) {
+            max-width: initial;
+        }
+        @include resp($lg) {
+            width: 50%;
+        }
+        .header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            @include resp($sm) {
+                justify-content: center;
+            }
+            .appIcon {
+                width: 40%;
+                text-align: left;
+                @include resp($sm) {
+                    width: initial;
+                    padding-right: 10px;
+                }
+                @include resp($xl) {
+                    padding-right: 15px;
+                }
+                img {
+                    width: 100%;
+                    display: inline-block;
+                    max-width: 90px;
+                    @include resp($sm) {
+                        max-width: 110px;
+                    }
+                    @include resp($lg) {
+                        max-width: 100px;
+                    }
+                    @include resp($xl) {
+                        max-width: 100px;
+                        width: 14vh;
+                        min-width: 93px;
+                    }
+                    @include resp($xxl) {
+                        max-width: 110px;
+                    }
+                    @include resp($mxl) {
+                        max-width: 120px;
+                    }
+                }
+            }
+            .title {
+                width: 60%;
+                text-align: center;
+                @include resp($sm) {
+                    width: initial;
+                    padding-left: 10px;
+                }
+                @include resp($xl) {
+                    padding-left: 15px;
+                }
+                h2 {
+                    font-size: 29px;
+                    padding-top: 5px;
+                    @include resp($sm) {
+                        font-size: 3rem;
+                    }
+                    @include resp($xl) {
+                        font-size: 3rem;
+                        padding-top: 0px;
+                    }
+                    @include resp($xxl) {
+                        font-size: 3.3rem;
+                    }
+                    @include resp($mxl) {
+                        font-size: 3.5rem;
+                    }
+                }
+                p {
+                    font-size: 1.1rem;
+                    padding-top: 2px;
+                    @include resp($sm) {
+                        font-size: 1.5rem;
+                    }
+                    @include resp($xl) {
+                        font-size: 1.5rem;
+                    }
+                    @include resp($xxl) {
+                        font-size: 1.6rem;
+                    }
+                    @include resp($mxl) {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+    // download section
+    .downloadSection {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 325px;
+        margin-top: 20px;
+        @include resp($sm) {
+            margin-top: 35px;
+            max-width: 400px;
+        }
+        @include resp($lg) {
+            max-width: 400px;
+        }
+        @include resp($xl) {
+            // max-width: 470px;
+            max-width: 410px;
+            margin-top: 15px;
+        }
+        @include resp($xxl) {
+            margin-top: 20px;
+        }
+        @include resp($mxl) {
+            max-width: 480px;
+            margin-top: 25px;
+        }
+        a {
+            display: block;
+            flex: 1;
+            padding-left: 8px;
+            padding-right: 8px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // form content
+    .formCnt {
+        .testAppTitle {
+            text-align: center;
+            margin-top: 15px;
+            h3 {
+                @include resp($lg) {
+                    font-size: 1.2rem;
+                }
+                @include resp($xl) {
+                    font-size: 1.3rem;
+                }
+                @include resp($mxl) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #dataForm {
+            margin-top: 30px;
+            @include resp($md) {
+                max-width: 550px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @include resp($lg) {
+                max-width: 385px;
+            }
+            @include resp($xl) {
+                max-width: 450px;
+                margin-top: 20px;
+            }
+            @include resp($mxl) {
+                max-width: 455px;
+            }
+            input {
+                padding: 10px 8px;
+                font-size: 0.9rem;
+                width: 100%;
+                border: none;
+                border-radius: 4px;
+                margin-bottom: 15px;
+                box-shadow: 1px 1px 3px 1px #c1c1c182;
+                @include resp($sm) {
+                    font-size: 1rem;
+                    padding: 12px 12px;
+                    margin-bottom: 20px;
+                }
+                @include resp($xl) {
+                    margin-bottom: 10px;
+                }
+                @include resp($xxl) {
+                    margin-bottom: 15px;
+                }
+            }
+            .iti__selected-flag {
+                @include resp($sm) {
+                    padding-left: 16px;
+                }
+            }
+            // itel
+            .iti {
+                margin-left: 0px;
+                margin-right: 0px;
+                display: block;
+            }
+            #phone {
+                padding-left: 50px;
+                @include resp($sm) {
+                    padding-left: 60px;
+                }
+            }
+        }
+    }
+    // texts
+    .form__pri__text {
+        @include resp($xl) {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}
+
+// footer style
+footer {
+    // display: none;
+    display: block;
+    // display: none;
+    @include resp($xl) {
+        // position: absolute;
+        // bottom: 0px;
+        // left: 0px;
+        // width: 100vw;
+    }
+    .container {
+        border-top: 1px solid #767676;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column wrap;
+        @include resp($lg) {
+            flex-flow: row wrap;
+        }
+        @include resp($xl) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        @include resp($mxl) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        // footer brand
+        .footer__brand {
+            order: 5;
+            margin-top: 15px;
+            text-align: center;
+            @include resp($lg) {
+                margin-top: 0px;
+            }
+        }
+
+        // footer links
+        .navFooter {
+            order: 3;
+            width: 100%;
+            @include resp($lg) {
+                width: 55%;
+                // order: 8;
+            }
+            @include resp($xl) {
+                width: 45%;
+            }
+            display: flex;
+            justify-content: space-between;
+            .navItem {
+                flex: 1;
+            }
+        }
+
+        p,
+        a {
+            font-family: incloodoFont;
+            font-size: 0.9rem;
+            font-weight: 600;
+            @include resp($lg) {
+                font-size: 1rem;
+            }
+            @include resp($xl) {
+                font-size: 1.05rem;
+            }
+            @include resp($mxl) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// full screen height
+#content__wrap {
+    @include resp($xl) {
+        height: 100vh;
+        min-height: 660px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 11% 81% 8%;
+        align-content: space-between;
+    }
+    @include resp($mxl) {
+        grid-template-rows: 10% 82% 8%;
+    }
+    // header
+    header {
+        // height: 10vh;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+}
+
+
+.main {
+    
+}
+// hamburger button style list
+
+.ham {
+    display: block;
+    background: none;
+    position: relative;
+    min-width: 150px;
+    min-height: 150px;
+    padding: 0;
+    border: 0;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    transition: all 250ms;
+}
+.ham:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 100%;
+    height: 100%;
+    border: 9px solid black;
+    border-radius: 100%;
+    -webkit-clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 50%, 50% 50%);
+    clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 50%, 50% 50%);
+}
+.ham > .bar {
+    display: block;
+    background: black;
+    position: absolute;
+    left: 22px;
+    width: 70%;
+    height: 10px;
+    border-radius: 6px;
+    transition: all 350ms;
+}
+.ham > .bar:first-child {
+    top: 25%;
+    transition-delay: 400ms;
+    transform-origin: top right;
+}
+.ham > .bar:nth-child(2) {
+    top: 47%;
+    transition-delay: 300ms;
+}
+.ham > .bar:last-child {
+    bottom: 25%;
+    transition-delay: 400ms;
+    transform-origin: bottom right;
+}
+
+.ham.opened:before {
+    -webkit-animation: open-close 400ms 300ms forwards ease-in;
+    animation: open-close 400ms 300ms forwards ease-in;
+}
+.ham.opened:active {
+    transform: scale(0.85);
+}
+.ham.opened > .bar {
+    transition-delay: 0ms;
+    left: 5px;
+    transform: rotate(-44deg);
+}
+.ham.opened > .bar:nth-child(2) {
+    left: 150px;
+    width: 0%;
+}
+.ham.opened > .bar:last-child {
+    bottom: 22%;
+    left: 5px;
+    transform: rotate(44deg);
+}
+
+.ham.closed:before {
+    animation: open-close 400ms forwards reverse ease-out;
+}
+
+@-webkit-keyframes open-close {
+    0% {
+        -webkit-clip-path: polygon(
+            100% 50%,
+            100% 50%,
+            100% 50%,
+            100% 50%,
+            50% 50%
+        );
+        clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 50%, 50% 50%);
+    }
+    25% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 50% 0%, 50% 0%, 50% 0%);
+        clip-path: polygon(100% 50%, 100% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    50% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 50%, 50% 50%);
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 50%, 50% 50%);
+    }
+    75% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 50% 100%);
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 50% 100%);
+    }
+    100% {
+        -webkit-clip-path: polygon(
+            100% 50%,
+            100% 0%,
+            0% 0%,
+            0% 100%,
+            100% 100%
+        );
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 100% 100%);
+    }
+}
+
+@keyframes open-close {
+    0% {
+        -webkit-clip-path: polygon(
+            100% 50%,
+            100% 50%,
+            100% 50%,
+            100% 50%,
+            50% 50%
+        );
+        clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 50%, 50% 50%);
+    }
+    25% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 50% 0%, 50% 0%, 50% 0%);
+        clip-path: polygon(100% 50%, 100% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+    50% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 50%, 50% 50%);
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 50%, 50% 50%);
+    }
+    75% {
+        -webkit-clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 50% 100%);
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 50% 100%);
+    }
+    100% {
+        -webkit-clip-path: polygon(
+            100% 50%,
+            100% 0%,
+            0% 0%,
+            0% 100%,
+            100% 100%
+        );
+        clip-path: polygon(100% 50%, 100% 0%, 0% 0%, 0% 100%, 100% 100%);
+    }
+}

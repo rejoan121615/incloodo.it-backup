@@ -20,50 +20,10 @@ body {
     width: 100%;
 }
 
-.box1 {
-    width: 50%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
-}
 
-.sliderContainer {
-    width: 65%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.sliderContainer img {
-    width: 90%;
-    height: 90%;
-    object-fit: scale-down;
-}
 
-.box2 {
-    width: 50%;
-    /* height: 80%; */
-}
 
-.header {
-    width: 70%;
-    height: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-}
-
-.appIcon {
-    width: 100px;
-    height: 65%;
-    background-color: #f78e72;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .appIcon img {
     width: 65%;
@@ -72,13 +32,7 @@ body {
 }
 
 .title {
-    width: 61%;
-    height: 65%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 5%;
+ 
 }
 
 .title h2 {
@@ -91,29 +45,14 @@ body {
     font-size: 2vw;
 }
 
-.downloadSection {
-    width: 70%;
-    height: 15%;
-    display: flex;
-    align-items: end;
-    /* padding-left: 5%; */
-    /* padding-right: 5%; */
-    justify-content: space-between;
-}
 
 .downloadSection img {
-    width: 47%;
+     /* width: 47%; */
     /* height: 50%; */
-    -webkit-filter: drop-shadow(5px 5px 5px #524e4e);
-    filter: drop-shadow(5px 5px 5px #524e4e);
+    /* -webkit-filter: drop-shadow(5px 5px 5px #524e4e); */
+    /* filter: drop-shadow(5px 5px 5px #524e4e);  */
 }
 
-.formCnt {
-    width: 70%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-}
 
 .testAppTitle {
     height: 25%;
@@ -123,29 +62,15 @@ body {
 }
 
 .testAppTitle h3 {
-    margin-top: 5%;
     font-family: incloodoFont;
-    text-align: center;
-    font-size: 1.5vw;
-    text-overflow: ellipsis;
 }
 
 form {
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3vw;
-    text-align: center;
+    
 }
 
 form input {
-    width: 90%;
-    padding: 12.5px;
-    margin-bottom: 5%;
-    border: none;
-    border-radius: 10px;
+    
 }
 
 input:focus {
@@ -163,9 +88,7 @@ form a {
 }
 
 .iti {
-    width: 90%;
-    border-radius: 10px;
-    background-color: white;
+
 }
 
 .sendButton {
@@ -192,23 +115,16 @@ form a {
 }
 
 .navItem {
-    width: 8%;
-    height: 50%;
-    margin: 10px;
     font-family: incloodoFont;
     border-right: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    font-size: 1.15vw;
     color: #1f1d1d;
     text-align: center;
 }
 
-.navItem :hover {
+/* .navItem :hover {
     font-family: incloodoFontBold;
-}
+} */
 
 .navItem a {
     text-decoration: none;
@@ -233,10 +149,10 @@ form a {
 
 @font-face {
     font-family: incloodoFontBold;
-    src: url(../webfont/Strawford-Bold.ttf)
+    src: url(../webfont/Strawford-Bold.ttf);
 }
 
 @font-face {
     font-family: incloodoFont;
-    src: url(../webfont/Strawford-Light.ttf)
+    src: url(../webfont/Strawford-Light.ttf);
 }
