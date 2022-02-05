@@ -195,11 +195,11 @@ header .container .resp__nav__items .navItem:last-child {
 
 /* brand  */
 .brand {
-  width: 40px;
+  width: 25px;
 }
 @media only screen and (min-width: 1200px) {
   .brand {
-    width: 55px;
+    width: 30px;
   }
 }
 

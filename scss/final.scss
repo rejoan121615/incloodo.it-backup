@@ -191,9 +191,9 @@ header .container {
 }
 /* brand  */
 .brand {
-    width: 40px;
+    width: 25px;
     @include resp($xl) {
-        width: 55px;
+        width: 30px;
     }
 }
 .brand a {
