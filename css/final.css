@@ -363,7 +363,7 @@ header .container .resp__nav__items .navItem:last-child {
 .header__nav .navItem:nth-child(6) {
   width: 13%;
 }
-.header__nav .navItem a {
+.header__nav .navItem a, .header__nav .navItem a p {
   font-family: Strawford-Regular;
   font-weight: 600;
   width: 100%;
@@ -774,6 +774,7 @@ footer .container a {
   font-family: incloodoFont;
   font-size: 0.9rem;
   font-weight: 600;
+  color: #6e6c6c;
 }
 @media only screen and (min-width: 992px) {
   footer .container p,
@@ -1078,6 +1079,42 @@ footer .container a {
 @media only screen and (min-width: 1800px) {
   .main .article__container .text p {
     font-size: 35px;
+  }
+}
+.main .article__container ol {
+  padding-bottom: 5px;
+}
+.main .article__container ol li {
+  font-family: incloodoFont;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #525252;
+}
+@media only screen and (min-width: 768px) {
+  .main .article__container ol li {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main .article__container ol li {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main .article__container ol li {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .main .article__container ol li {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main .article__container ol {
+    padding-bottom: 10px;
   }
 }
 .main .header {

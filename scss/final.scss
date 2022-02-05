@@ -337,7 +337,7 @@ header .container {
         width: 13%;
     }
     // anchore tag style
-    a {
+    a, a p {
         // color: #1f1d1d;
         font-family: Strawford-Regular;
         font-weight: 600;
@@ -685,6 +685,7 @@ footer {
             font-family: incloodoFont;
             font-size: 0.9rem;
             font-weight: 600;
+            color: #6e6c6c;
             @include resp($lg) {
                 font-size: 1rem;
             }
@@ -895,11 +896,11 @@ footer {
     .container {
         margin-top: 40px;
         margin-bottom: 40px;
-        @include resp ($md) {
+        @include resp($md) {
             margin-top: 55px;
             margin-bottom: 55px;
         }
-        @include resp ($xxl) {
+        @include resp($xxl) {
             margin-top: 70px;
             margin-bottom: 70px;
         }
@@ -940,14 +941,14 @@ footer {
                 display: inline-block;
                 padding: 7px 35px;
                 border-bottom: 1px solid black;
-                @include resp ($sm) {
-                    font-size: 1.5rem ;
+                @include resp($sm) {
+                    font-size: 1.5rem;
                 }
                 @include resp($md) {
                     font-size: 1.85rem;
                     border-bottom: 2px solid black;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     font-size: 2rem;
                 }
                 @include resp($mxl) {
@@ -959,7 +960,7 @@ footer {
     // article style
     .article__container {
         margin-top: 15px;
-        @include resp ($md) {
+        @include resp($md) {
             margin-top: 25px;
         }
         // text
@@ -1005,11 +1006,35 @@ footer {
                 }
             }
         }
+        ol {
+            li {
+                font-family: incloodoFont;
+                font-weight: 600;
+                margin-bottom: 8px;
+                margin-top: 8px;
+                color: #525252;
+                @include resp($md) {
+                    font-size: 22px;
+                    margin-top: 25px;
+                }
+                @include resp($lg) {
+                    font-size: 25px;
+                }
+                @include resp($xxl) {
+                    font-size: 30px;
+                }
+                @include resp($mxl) {
+                    font-size: 34px;
+                }
+            }
+            padding-bottom: 5px;
+            @include resp ($md) {
+                padding-bottom: 10px;
+            }
+        }
     }
 
     // common style
-
-    
 
     .header {
         width: 100%;
