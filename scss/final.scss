@@ -28,6 +28,13 @@ section {
     width: 100%;
 }
 
+p {
+    font-family: incloodoFont;
+    font-size: 18px;
+    color: rgb(110, 108, 108);
+    font-weight: 500;
+}
+
 .container {
     width: 100%;
     padding-left: 18px;
@@ -888,16 +895,73 @@ footer {
     .container {
         margin-top: 40px;
         margin-bottom: 40px;
+        @include resp ($md) {
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+        @include resp ($xxl) {
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
         @include resp($mxl) {
             max-width: 1300px;
         }
+        // wrapper
+        .wrap {
+            padding: 10px;
+            // border: 1px solid #d4d4d4;
+            // box-shadow: 1px 1px 5px 0px #d4d4d4;
+            // border-radius: 10px;
+            @include resp(420px) {
+                padding: 15px;
+            }
+            @include resp($sm) {
+                padding: 18px;
+            }
+            @include resp($md) {
+                padding: 20px 22px;
+            }
+            @include resp($lg) {
+                padding: 23px 28px;
+            }
+            @include resp($xl) {
+                padding: 28px 33px;
+            }
+        }
     }
     // top style
-
+    .header {
+        .pageTitle {
+            width: 100%;
+            text-align: center;
+            h2 {
+                font-family: incloodoFont;
+                font-weight: 600;
+                display: inline-block;
+                padding: 7px 35px;
+                border-bottom: 1px solid black;
+                @include resp ($sm) {
+                    font-size: 1.5rem ;
+                }
+                @include resp($md) {
+                    font-size: 1.85rem;
+                    border-bottom: 2px solid black;
+                }
+                @include resp ($xl) {
+                    font-size: 2rem;
+                }
+                @include resp($mxl) {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
     // article style
     .article__container {
         margin-top: 15px;
-
+        @include resp ($md) {
+            margin-top: 25px;
+        }
         // text
         .text {
             margin-bottom: 13px;
@@ -906,47 +970,46 @@ footer {
                 font-family: incloodoFont;
                 font-weight: 600;
                 margin-bottom: 8px;
+                margin-top: 8px;
+                color: #525252;
+                @include resp($md) {
+                    font-size: 22px;
+                    margin-top: 25px;
+                }
+                @include resp($lg) {
+                    font-size: 25px;
+                }
+                @include resp($xxl) {
+                    font-size: 30px;
+                }
+                @include resp($mxl) {
+                    font-size: 34px;
+                }
+            }
+
+            p {
+                @include resp($sm) {
+                    font-size: 20px;
+                }
+                @include resp($md) {
+                    font-size: 24px;
+                }
+                @include resp($xl) {
+                    font-size: 28px;
+                }
+                @include resp($xxl) {
+                    font-size: 32px;
+                }
+                @include resp($mxl) {
+                    font-size: 35px;
+                }
             }
         }
     }
 
     // common style
-    p {
-        font-family: incloodoFont;
-        font-size: 18px;
-        color: rgb(110, 108, 108);
-        font-weight: 500;
-    }
 
-    @media only screen and (min-width: 576px) {
-        .main {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
-    @media only screen and (min-width: 768px) {
-        p {
-            font-size: 21.5px;
-        }
-    }
-
-    @media only screen and (min-width: 992px) {
-        p {
-            font-size: 23px;
-        }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .main {
-            margin-left: 15%;
-            margin-right: 15%;
-            margin-top: 10%;
-            margin-bottom: 5%;
-        }
-    }
+    
 
     .header {
         width: 100%;
@@ -965,13 +1028,16 @@ footer {
         margin-bottom: 0px;
         margin-top: 0px;
         @include resp($lg) {
-            font-size: 24px;
+            font-size: 20px;
         }
         @include resp($xl) {
-            font-size: 27px;
+            font-size: 22px;
         }
         @include resp($xxl) {
-            font-size: 30px;
+            font-size: 24px;
+        }
+        @include resp($mxl) {
+            font-size: 26px;
         }
     }
 
@@ -987,9 +1053,16 @@ footer {
         width: 30px;
         position: relative;
         transform: scale(0.7);
-    }
-    @media only screen and (min-width: 1024px) {
-        .closeButton button .crsBtn {
+        @include resp($lg) {
+            transform: scale(0.8);
+        }
+        @include resp($xl) {
+            transform: scale(0.85);
+        }
+        @include resp($xxl) {
+            transform: scale(0.9);
+        }
+        @include resp($mxl) {
             transform: scale(1);
         }
     }

@@ -105,87 +105,261 @@
     </head>
 
     <body>
-        <section class="main">
+        <!-- header  -->
+        <header>
             <div class="container">
-                <!-- top header section  -->
-                <div class="header">
-                    <div class="pageTitle">
-                        <h2>Cosa Facciamo</h2>
+                <!-- brand icon  -->
+                <div class="brand">
+                    <a href="index.html">
+                        <img src="./img/brand-logo.png" alt="logo" />
+                    </a>
+                </div>
+                <!-- nav items  -->
+                <div class="navFooter header__nav">
+                    <div class="navItem">
+                        <a href="./index.html">
+                            <p>Home</p>
+                        </a>
                     </div>
 
-                    <div class="closeButton">
-                        <button onclick="redirect()">
-                            <div class="crsBtn">
-                                <div class="line"></div>
-                            </div>
-                        </button>
+                    <div class="navItem">
+                        <a href="./cosaFacciamo.html"> Cosa Facciamo </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./inCosaCrediamo.html"> In Cosa Crediamo </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./regoleValori.html"> Regole & Valori </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="mailto:info@incloodo.com">
+                            <p>Scrivici</p>
+                        </a>
                     </div>
                 </div>
-                <!-- article texts  -->
-                <article class="article__container">
-                    <div class="text">
-                        <p>
-                            Incloodo è la start-up nata per creare una community
-                            Inclusiva dove il bisogno di appartenenza prevale su
-                            quello di individualità. La nostra missione è
-                            facilitare la connessione tra gruppi di persone con
-                            interessi in comune e non incrementando quindi le
-                            esperienze condivise.
-                        </p>
+                <!-- responsive nav btn  -->
+                <div class="resp__btn__wrap">
+                    <button class="ham closed">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <!-- social icon  -->
+                <div class="social__link">
+                    <a href="https://www.facebook.com/incloodo">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/incloodo/">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/54277181/">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                </div>
+                <!-- responsive navbar  -->
+                <div class="res__navbar">
+                    <!-- top bar  -->
+                    <div class="top_wrap" style="display: none">
+                        <div class="container">
+                            <!-- brand  -->
+                            <div class="brand">
+                                <a href="index.html">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 194 313"
+                                    >
+                                        <path
+                                            fill="black"
+                                            d="M129 56v87L66 56H0V0h194v56h-65ZM66 170v87l-66-1v56h194v-56h-65l-63-86Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- social bar  -->
+                            <div class="social__link">
+                                <a href="https://www.facebook.com/incloodo">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                                <a href="https://www.instagram.com/incloodo/">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/company/54277181/"
+                                >
+                                    <i class="fab fa-linkedin-in fa-2x"></i>
+                                </a>
+                            </div>
+                            <!-- cross -->
+                            <button id="resp__btn">
+                                <svg
+                                    width="34"
+                                    height="34"
+                                    viewBox="0 0 34 34"
+                                    fill="transparent"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="2.82843"
+                                        width="44"
+                                        height="4"
+                                        rx="1"
+                                        transform="rotate(45 2.82843 0)"
+                                        fill="black"
+                                    />
+                                    <rect
+                                        y="31.1127"
+                                        width="44"
+                                        height="4"
+                                        rx="1"
+                                        transform="rotate(-45 0 31.1127)"
+                                        fill="black"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p>
-                            Incloodo è il primo Social Network dove si seguono i
-                            gruppi, non le singole persone.
-                        </p>
+                    <!-- navigation links  -->
+                    <div class="resp__nav__items">
+                        <div class="navItem">
+                            <a href="#">
+                                <p>Home</p>
+                            </a>
+                        </div>
+
+                        <div class="navItem">
+                            <a href="./cosaFacciamo.html"> Cosa Facciamo </a>
+                        </div>
+                        <div class="navItem">
+                            <a href="./inCosaCrediamo.html">
+                                In Cosa Crediamo
+                            </a>
+                        </div>
+                        <div class="navItem">
+                            <a href="./regoleValori.html"> Regole & Valori </a>
+                        </div>
+                        <div class="navItem">
+                            <a href="mailto:info@incloodo.com">
+                                <p>Scrivici</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <p>
-                            Diamo l’opportunità ad ogni singolo utente di
-                            interagire come meglio crede nei gruppi infatti ci
-                            sono diversi livelli di appartenenza:
-                        </p>
+                </div>
+            </div>
+        </header>
+        <!-- content  -->
+        <section class="main">
+            <!-- main section  -->
+            <div class="container">
+                <div class="wrap">
+                    <!-- top header section  -->
+                    <div class="header">
+                        <div class="pageTitle">
+                            <h2>Cosa Facciamo</h2>
+                        </div>
+
+                        <!-- <div class="closeButton">
+                            <button onclick="redirect()">
+                                <div class="crsBtn">
+                                    <div class="line"></div>
+                                </div>
+                            </button>
+                        </div> -->
                     </div>
-                    <div class="text">
-                        <h1>Livello 0:</h1>
-                        <p>
-                            Seguo un gruppo e posso vedere nel Feed tutti i
-                            contenuti pubblicati dai membri senza poterne creare
-                            io stesso.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <h1>Livello 1:</h1>
-                        <p>
-                            Sono membro di un gruppo e posso creare contenuti al
-                            suo interno oltre che vederli.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <h1>Livello 2:</h1>
-                        <p>
-                            Sono Admin di un gruppo posso quindi accettare nuovi
-                            membri, creare contenuti, bannare utenti.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <h1>Livello 3:</h1>
-                        <p>
-                            Sono un Owner (ho creato un gruppo) quindi posso
-                            nominare degli admin, accettare persone, creare
-                            contenuti, cambiare descrizione e immagine del
-                            profilo di gruppo e tanto altro.
-                        </p>
-                    </div>
-                    <div class="text">
-                        <p>
-                            In Incloodo ogni utente sceglie come interagire con
-                            i gruppi e gli utenti.
-                        </p>
-                    </div>
-                </article>
+                    <!-- article texts  -->
+                    <article class="article__container">
+                        <div class="text">
+                            <p>
+                                Incloodo è la start-up nata per creare una
+                                community Inclusiva dove il bisogno di
+                                appartenenza prevale su quello di individualità.
+                                La nostra missione è facilitare la connessione
+                                tra gruppi di persone con interessi in comune e
+                                non incrementando quindi le esperienze
+                                condivise.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Incloodo è il primo Social Network dove si
+                                seguono i gruppi, non le singole persone.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Diamo l’opportunità ad ogni singolo utente di
+                                interagire come meglio crede nei gruppi infatti
+                                ci sono diversi livelli di appartenenza:
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h1>Livello 0:</h1>
+                            <p>
+                                Seguo un gruppo e posso vedere nel Feed tutti i
+                                contenuti pubblicati dai membri senza poterne
+                                creare io stesso.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h1>Livello 1:</h1>
+                            <p>
+                                Sono membro di un gruppo e posso creare
+                                contenuti al suo interno oltre che vederli.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h1>Livello 2:</h1>
+                            <p>
+                                Sono Admin di un gruppo posso quindi accettare
+                                nuovi membri, creare contenuti, bannare utenti.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <h1>Livello 3:</h1>
+                            <p>
+                                Sono un Owner (ho creato un gruppo) quindi posso
+                                nominare degli admin, accettare persone, creare
+                                contenuti, cambiare descrizione e immagine del
+                                profilo di gruppo e tanto altro.
+                            </p>
+                        </div>
+                        <div class="text">
+                            <p>
+                                In Incloodo ogni utente sceglie come interagire
+                                con i gruppi e gli utenti.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
+        <!-- footer  -->
+        <footer>
+            <div class="container">
+                <!-- company details  -->
+                <div class="footer__brand">
+                    <p>© 2022 Incloodo - All right reserved.</p>
+                </div>
+
+                <!-- footer links  -->
+                <div class="navFooter">
+                    <div class="navItem">
+                        <a href="./info.html">
+                            <p>Info</p>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./termini.html"> Termini & Condizioni </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./privacy.html">
+                            <p>Privacy</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"

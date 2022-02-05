@@ -16,6 +16,13 @@ section {
   width: 100%;
 }
 
+p {
+  font-family: incloodoFont;
+  font-size: 18px;
+  color: #6e6c6c;
+  font-weight: 500;
+}
+
 .container {
   width: 100%;
   padding-left: 18px;
@@ -932,13 +939,90 @@ footer .container a {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 768px) {
+  .main .container {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main .container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
 @media only screen and (min-width: 1800px) {
   .main .container {
     max-width: 1300px;
   }
 }
+.main .container .wrap {
+  padding: 10px;
+}
+@media only screen and (min-width: 420px) {
+  .main .container .wrap {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .main .container .wrap {
+    padding: 18px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main .container .wrap {
+    padding: 20px 22px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main .container .wrap {
+    padding: 23px 28px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main .container .wrap {
+    padding: 28px 33px;
+  }
+}
+.main .header .pageTitle {
+  width: 100%;
+  text-align: center;
+}
+.main .header .pageTitle h2 {
+  font-family: incloodoFont;
+  font-weight: 600;
+  display: inline-block;
+  padding: 7px 35px;
+  border-bottom: 1px solid black;
+}
+@media only screen and (min-width: 576px) {
+  .main .header .pageTitle h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main .header .pageTitle h2 {
+    font-size: 1.85rem;
+    border-bottom: 2px solid black;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main .header .pageTitle h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .main .header .pageTitle h2 {
+    font-size: 2.2rem;
+  }
+}
 .main .article__container {
   margin-top: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .main .article__container {
+    margin-top: 25px;
+  }
 }
 .main .article__container .text {
   margin-bottom: 13px;
@@ -947,38 +1031,53 @@ footer .container a {
   font-family: incloodoFont;
   font-weight: 600;
   margin-bottom: 8px;
+  margin-top: 8px;
+  color: #525252;
 }
-.main p {
-  font-family: incloodoFont;
-  font-size: 18px;
-  color: #6e6c6c;
-  font-weight: 500;
+@media only screen and (min-width: 768px) {
+  .main .article__container .text h1 {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .main .article__container .text h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main .article__container .text h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .main .article__container .text h1 {
+    font-size: 34px;
+  }
 }
 @media only screen and (min-width: 576px) {
-  .main .main {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .main p {
+  .main .article__container .text p {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .main p {
-    font-size: 21.5px;
+  .main .article__container .text p {
+    font-size: 24px;
   }
 }
-@media only screen and (min-width: 992px) {
-  .main p {
-    font-size: 23px;
+@media only screen and (min-width: 1200px) {
+  .main .article__container .text p {
+    font-size: 28px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .main .main {
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 10%;
-    margin-bottom: 5%;
+@media only screen and (min-width: 1400px) {
+  .main .article__container .text p {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .main .article__container .text p {
+    font-size: 35px;
   }
 }
 .main .header {
@@ -998,17 +1097,22 @@ footer .container a {
 }
 @media only screen and (min-width: 992px) {
   .main .pageTitle h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .main .pageTitle h2 {
-    font-size: 27px;
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .main .pageTitle h2 {
-    font-size: 30px;
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .main .pageTitle h2 {
+    font-size: 26px;
   }
 }
 .main .closeButton button {
@@ -1020,7 +1124,22 @@ footer .container a {
   position: relative;
   transform: scale(0.7);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
+  .main .closeButton button .crsBtn {
+    transform: scale(0.8);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main .closeButton button .crsBtn {
+    transform: scale(0.85);
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .main .closeButton button .crsBtn {
+    transform: scale(0.9);
+  }
+}
+@media only screen and (min-width: 1800px) {
   .main .closeButton button .crsBtn {
     transform: scale(1);
   }
