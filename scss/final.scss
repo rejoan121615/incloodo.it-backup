@@ -433,7 +433,7 @@ header .container {
                 @include resp($xl) {
                     padding-right: 15px;
                 }
-                img {
+                svg {
                     width: 100%;
                     display: inline-block;
                     max-width: 90px;
@@ -703,7 +703,7 @@ footer {
 #content__wrap {
     @include resp($xl) {
         height: 100vh;
-        min-height: 660px;
+        min-height: 680px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 11% 81% 8%;

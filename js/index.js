@@ -135,18 +135,14 @@ const navBtn = document.querySelector("button.ham");
 const browMemory = window.localStorage;
 
 function btnOpenClose() {
-    if (browMemory.getItem("open") === "true") {
-        browMemory.setItem("open", false);
-        console.log("execute true");
+    if (navBtn.classList.contains("closed")) {
         navBtn.classList.remove("closed");
         animateNav.classList.remove("animate__nav");
         setTimeout(() => {
             navBtn.classList.add("opened");
             animateNav.classList.add("animate__nav");
         }, 1);
-    } else if (browMemory.getItem("open") === "false") {
-        browMemory.setItem("open", true);
-        console.log("execute false");
+    } else {
         navBtn.classList.remove("opened");
         animateNav.classList.add("animate__nav");
         setTimeout(() => {
@@ -155,17 +151,7 @@ function btnOpenClose() {
         }, 1);
     }
 }
-if (navBtn) {
-    navBtn.onclick = function () {
-        if (browMemory.getItem("open") === null) {
-            browMemory.setItem("open", true);
-        }
-        btnOpenClose();
-    };
-}
 
-window.onload = function () {
-    if (browMemory.getItem("open") === "true") {
-        btnOpenClose();
-    }
+navBtn.onclick = function () {
+    btnOpenClose();
 };

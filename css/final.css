@@ -475,35 +475,35 @@ header .container .resp__nav__items .navItem:last-child {
     padding-right: 15px;
   }
 }
-.mainCnt .content__box .header .appIcon img {
+.mainCnt .content__box .header .appIcon svg {
   width: 100%;
   display: inline-block;
   max-width: 90px;
 }
 @media only screen and (min-width: 576px) {
-  .mainCnt .content__box .header .appIcon img {
+  .mainCnt .content__box .header .appIcon svg {
     max-width: 110px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .mainCnt .content__box .header .appIcon img {
+  .mainCnt .content__box .header .appIcon svg {
     max-width: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .mainCnt .content__box .header .appIcon img {
+  .mainCnt .content__box .header .appIcon svg {
     max-width: 100px;
     width: 14vh;
     min-width: 93px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .mainCnt .content__box .header .appIcon img {
+  .mainCnt .content__box .header .appIcon svg {
     max-width: 110px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .mainCnt .content__box .header .appIcon img {
+  .mainCnt .content__box .header .appIcon svg {
     max-width: 120px;
   }
 }
@@ -798,7 +798,7 @@ footer .container a {
 @media only screen and (min-width: 1200px) {
   #content__wrap {
     height: 100vh;
-    min-height: 660px;
+    min-height: 680px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 11% 81% 8%;
