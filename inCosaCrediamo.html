@@ -78,12 +78,25 @@
             sizes="16x16"
             href="./icons/favicon-16x16.png"
         />
-
+        <meta
+            property="og:url"
+            content="https://incloodo.it/in-Cosa-Crediamo.html"
+        />
+        <meta property="og:title" content="In Cosa Crediamo - Incloodo" />
+        <meta
+            property="og:description"
+            content="Incloodo crede fermamente nei valori dell’inclusione e dell’aggregazione"
+        />
+        <meta
+            property="og:image"
+            content="https://incloodo.it/images/image-incloodo.png"
+        />
+        <meta property="fb:app_id" content="451855799571075" />
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:site_name" content="Incloodo" />
         <!-- Main Favicon -->
         <link rel="icon" type="image/pg" href="favicon/png" />
-
         <!-- ALTERNATIVE <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
-
         <link rel="manifest" href="./icons/manifest.json" />
         <meta name="msapplication-TileColor" content="#f78e72" />
         <meta
@@ -232,9 +245,7 @@
                     <!-- navigation links  -->
                     <div class="resp__nav__items">
                         <div class="navItem">
-                            <a href="./index.html">
-                                Home
-                            </a>
+                            <a href="./index.html"> Home </a>
                         </div>
 
                         <div class="navItem">
@@ -249,9 +260,7 @@
                             <a href="./regoleValori.html"> Regole & Valori </a>
                         </div>
                         <div class="navItem">
-                            <a href="mailto:info@incloodo.com">
-                                Scrivici
-                            </a>
+                            <a href="mailto:info@incloodo.com"> Scrivici </a>
                         </div>
                     </div>
                 </div>
@@ -264,24 +273,27 @@
                     <!-- top header section  -->
                     <div class="header">
                         <div class="pageTitle">
-                            <h2>In Cosa Crediamo</h2>
+                            <h1>In Cosa Crediamo</h1>
                         </div>
                     </div>
                     <!-- article texts  -->
                     <article class="article__container">
                         <div class="text">
-                            <p>
+                            <h2>
                                 Incloodo crede fermamente nei valori
-                                dell’inclusione e dell’aggregazione e infatti la
-                                community è pensata proprio per tutti quei
-                                gruppi che amano accogliere nuove persone al
-                                loro interno e che sono proattivi nell’iniziare
-                                nuove attività e condividere quelle già
-                                avvenute. La nostra community consente a
-                                chiunque di esprimersi liberamente e appartenere
-                                ad un gruppo di persone con cui si condividono
-                                interessi ed esperienze. Cambia il tuo modo di
-                                condividere, fallo in modo inclusivo.
+                                dell’inclusione e dell’aggregazione
+                            </h2>
+                            <p>
+                                e infatti la community è pensata proprio per
+                                tutti quei gruppi che amano accogliere nuove
+                                persone al loro interno e che sono proattivi
+                                nell’iniziare nuove attività e condividere
+                                quelle già avvenute. La nostra community
+                                consente a chiunque di esprimersi liberamente e
+                                appartenere ad un gruppo di persone con cui si
+                                condividono interessi ed esperienze. Cambia il
+                                tuo modo di condividere, fallo in modo
+                                inclusivo.
                             </p>
                         </div>
                     </article>
@@ -295,7 +307,6 @@
                 <div class="footer__brand">
                     <p>© 2022 Incloodo - All right reserved.</p>
                 </div>
-
                 <!-- footer links  -->
                 <div class="navFooter">
                     <div class="navItem">
@@ -322,5 +333,46 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js"></script>
-    
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Incloodo",
+        "alternateName": "Incloodo",
+        "legalName": "Incloodo S.r.l.",
+        "url": "https://incloodo.it/",
+        "logo": "https://incloodo.it/images/logo-incloodo.png",
+        "address": "Viale Luigi Majno 28, 20129 Milano"
+            [
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Milano",
+                "addressRegion": "Lombardia",
+                "postalCode": "20129",
+                "streetAddress": "Viale Luigi Majno 28",
+                "telephone": "+390287178674"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Bari",
+                "addressRegion": "Puglia",
+                "postalCode": "70123",
+                "streetAddress": "Fiera del Levante, Viale Volga",
+                "telephone": "+390809904680"
+            }],
+        "sameAs": [
+            "https://www.facebook.com/incloodo",
+            "https://www.instagram.com/incloodo/",
+            "https://www.linkedin.com/company/54277181/"
+        ],
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "email": "info@incloodo.com",
+            "telephone": "+390287178674",
+            "contactType": "customer service"
+          }]
+        }
+    </script>
 </html>

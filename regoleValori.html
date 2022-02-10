@@ -78,12 +78,25 @@
             sizes="16x16"
             href="./icons/favicon-16x16.png"
         />
-
         <!-- Main Favicon -->
         <link rel="icon" type="image/pg" href="favicon/png" />
-
+        <meta
+            property="og:url"
+            content="https://incloodo.it/regole-Valori.html"
+        />
+        <meta property="og:title" content="Regole & Valori - Incloodo" />
+        <meta
+            property="og:description"
+            content="Ci chiamiamo Incloodo perché non accettiamo alcun tipo di discriminazione, qualsiasi utente che non rispetti questa regola non è ben accetto. "
+        />
+        <meta
+            property="og:image"
+            content="https://incloodo.it/images/image-incloodo.png"
+        />
+        <meta property="fb:app_id" content="451855799571075" />
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:site_name" content="Incloodo" />
         <!-- ALTERNATIVE <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
-
         <link rel="manifest" href="./icons/manifest.json" />
         <meta name="msapplication-TileColor" content="#f78e72" />
         <meta
@@ -94,7 +107,6 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/final.css" />
     </head>
-
     <body>
         <!-- header  -->
         <header>
@@ -224,9 +236,7 @@
                     <!-- navigation links  -->
                     <div class="resp__nav__items">
                         <div class="navItem">
-                            <a href="./index.html">
-                                Home
-                            </a>
+                            <a href="./index.html"> Home </a>
                         </div>
 
                         <div class="navItem">
@@ -241,9 +251,7 @@
                             <a href="./regoleValori.html"> Regole & Valori </a>
                         </div>
                         <div class="navItem">
-                            <a href="mailto:info@incloodo.com">
-                                Scrivici
-                            </a>
+                            <a href="mailto:info@incloodo.com"> Scrivici </a>
                         </div>
                     </div>
                 </div>
@@ -256,42 +264,33 @@
                     <!-- header  -->
                     <div class="header">
                         <div class="pageTitle">
-                            <h2>Regole & Valori</h2>
+                            <h1>Regole & Valori</h1>
                         </div>
                     </div>
                     <!-- article texts  -->
                     <article class="article__container">
                         <div class="text">
-                            <p>
+                            <h2>
                                 Ci chiamiamo Incloodo perché non accettiamo
                                 alcun tipo di discriminazione, qualsiasi utente
                                 che non rispetti questa regola non è ben
-                                accetto.
-                                <br />
-                                <br />
-                                Promuoviamo l’inclusione e l’aggregazione
-                                attraverso una modalità di interazione che mette
-                                al centro i gruppi e le esperienze condivise.
-                                <br />
-                                <br />
-                                <b>I GRUPPI</b>
-                                <br />
-                                <br />
-                                Ogni gruppo è propenso ad accettare nuove
-                                persone che vogliano aggregarsi nel rispetto
-                                delle regole del gruppo. Ogni gruppo ha un Owner
-                                ed almeno un admin che moderano i contenuti e
-                                accettano i nuovi membri. Ogni gruppo ha una
-                                chat con tutti i membri al suo interno. I gruppi
-                                di Incloodo sono considerati micro-community
-                                volte all’incremento di esperienze condivise.
-                                <br />
-                                <br />
-                                <b>LE PERSONE</b>
-                                <br />
-                                <br />
-                                Gli utenti sono liberi di condividere qualsiasi
-                                tipo di contenuto che non violi i valori della
+                                accetto. Promuoviamo l’inclusione e
+                                l’aggregazione attraverso una modalità di
+                                interazione che mette al centro i gruppi e le
+                                esperienze condivise.
+                            </h2>
+                            <p>
+                                I GRUPPI Ogni gruppo è propenso ad accettare
+                                nuove persone che vogliano aggregarsi nel
+                                rispetto delle regole del gruppo. Ogni gruppo ha
+                                un Owner ed almeno un admin che moderano i
+                                contenuti e accettano i nuovi membri. Ogni
+                                gruppo ha una chat con tutti i membri al suo
+                                interno. I gruppi di Incloodo sono considerati
+                                micro-community volte all’incremento di
+                                esperienze condivise. LE PERSONE Gli utenti sono
+                                liberi di condividere qualsiasi tipo di
+                                contenuto che non violi i valori della
                                 community. Ogni contenuto è condiviso sempre a
                                 partire da un singolo gruppo di cui l’utente è
                                 membro perciò con un post non rappresenti solo
@@ -336,5 +335,46 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js"></script>
-    
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Incloodo",
+        "alternateName": "Incloodo",
+        "legalName": "Incloodo S.r.l.",
+        "url": "https://incloodo.it/",
+        "logo": "https://incloodo.it/images/logo-incloodo.png",
+        "address": "Viale Luigi Majno 28, 20129 Milano"
+            [
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Milano",
+                "addressRegion": "Lombardia",
+                "postalCode": "20129",
+                "streetAddress": "Viale Luigi Majno 28",
+                "telephone": "+390287178674"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Bari",
+                "addressRegion": "Puglia",
+                "postalCode": "70123",
+                "streetAddress": "Fiera del Levante, Viale Volga",
+                "telephone": "+390809904680"
+            }],
+        "sameAs": [
+            "https://www.facebook.com/incloodo",
+            "https://www.instagram.com/incloodo/",
+            "https://www.linkedin.com/company/54277181/"
+        ],
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "email": "info@incloodo.com",
+            "telephone": "+390287178674",
+            "contactType": "customer service"
+          }]
+        }
+    </script>
 </html>

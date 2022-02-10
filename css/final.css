@@ -363,7 +363,8 @@ header .container .resp__nav__items .navItem:last-child {
 .header__nav .navItem:nth-child(6) {
   width: 13%;
 }
-.header__nav .navItem a, .header__nav .navItem a p {
+.header__nav .navItem a,
+.header__nav .navItem a p {
   font-family: Strawford-Regular;
   font-weight: 600;
   width: 100%;
@@ -989,7 +990,7 @@ footer .container a {
   width: 100%;
   text-align: center;
 }
-.main .header .pageTitle h2 {
+.main .header .pageTitle h1 {
   font-family: incloodoFont;
   font-weight: 600;
   display: inline-block;
@@ -997,23 +998,23 @@ footer .container a {
   border-bottom: 1px solid black;
 }
 @media only screen and (min-width: 576px) {
-  .main .header .pageTitle h2 {
+  .main .header .pageTitle h1 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .main .header .pageTitle h2 {
+  .main .header .pageTitle h1 {
     font-size: 1.85rem;
     border-bottom: 2px solid black;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .main .header .pageTitle h2 {
+  .main .header .pageTitle h1 {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .main .header .pageTitle h2 {
+  .main .header .pageTitle h1 {
     font-size: 2.2rem;
   }
 }
@@ -1028,7 +1029,7 @@ footer .container a {
 .main .article__container .text {
   margin-bottom: 13px;
 }
-.main .article__container .text h1 {
+.main .article__container .text h2 {
   font-family: incloodoFont;
   font-weight: 600;
   margin-bottom: 8px;
@@ -1036,23 +1037,23 @@ footer .container a {
   color: #525252;
 }
 @media only screen and (min-width: 768px) {
-  .main .article__container .text h1 {
+  .main .article__container .text h2 {
     font-size: 22px;
     margin-top: 25px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .main .article__container .text h1 {
-    font-size: 25px;
+  .main .article__container .text h2 {
+    font-size: 26px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .main .article__container .text h1 {
+  .main .article__container .text h2 {
     font-size: 30px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .main .article__container .text h1 {
+  .main .article__container .text h2 {
     font-size: 34px;
   }
 }

@@ -82,9 +82,23 @@
 
         <!-- Main Favicon -->
         <link rel="icon" type="image/pg" href="favicon/png" />
-
+        <meta
+            property="og:url"
+            content="https://incloodo.it/cosa-facciamo.html"
+        />
+        <meta property="og:title" content="Cosa Facciamo - Incloodo" />
+        <meta
+            property="og:description"
+            content="Incloodo è la start-up nata per creare una community Inclusiva dove il bisogno di appartenenza prevale su quello di individualità"
+        />
+        <meta
+            property="og:image"
+            content="https://incloodo.it/images/image-incloodo.png"
+        />
+        <meta property="fb:app_id" content="451855799571075" />
+        <meta property="og:locale" content="it_IT" />
+        <meta property="og:site_name" content="Incloodo" />
         <!-- ALTERNATIVE <link rel="icon" type="image/x-icon" href="favicon.ico" /> -->
-
         <link rel="manifest" href="./icons/manifest.json" />
         <meta name="msapplication-TileColor" content="#f78e72" />
         <meta
@@ -233,9 +247,7 @@
                     <!-- navigation links  -->
                     <div class="resp__nav__items">
                         <div class="navItem">
-                            <a href="./index.html">
-                                Home
-                            </a>
+                            <a href="./index.html"> Home </a>
                         </div>
 
                         <div class="navItem">
@@ -250,9 +262,7 @@
                             <a href="./regoleValori.html"> Regole & Valori </a>
                         </div>
                         <div class="navItem">
-                            <a href="mailto:info@incloodo.com">
-                                Scrivici
-                            </a>
+                            <a href="mailto:info@incloodo.com"> Scrivici </a>
                         </div>
                     </div>
                 </div>
@@ -266,45 +276,33 @@
                     <!-- top header section  -->
                     <div class="header">
                         <div class="pageTitle">
-                            <h2>Cosa Facciamo</h2>
+                            <h1>Cosa Facciamo</h1>
                         </div>
-
-                        <!-- <div class="closeButton">
-                            <button onclick="redirect()">
-                                <div class="crsBtn">
-                                    <div class="line"></div>
-                                </div>
-                            </button>
-                        </div> -->
                     </div>
                     <!-- article texts  -->
                     <article class="article__container">
                         <div class="text">
-                            <p>
+                            <h2>
                                 Incloodo è la start-up nata per creare una
                                 community Inclusiva dove il bisogno di
                                 appartenenza prevale su quello di individualità.
+                            </h2>
+                            <p>
                                 La nostra missione è facilitare la connessione
                                 tra gruppi di persone con interessi in comune e
                                 non incrementando quindi le esperienze
                                 condivise.
                             </p>
-                        </div>
-                        <div class="text">
                             <p>
                                 Incloodo è il primo Social Network dove si
-                                seguono i gruppi, non le singole persone.
-                            </p>
-                        </div>
-                        <div class="text">
-                            <p>
-                                Diamo l’opportunità ad ogni singolo utente di
+                                seguono i gruppi, non le singole persone. Diamo
+                                l’opportunità ad ogni singolo utente di
                                 interagire come meglio crede nei gruppi infatti
                                 ci sono diversi livelli di appartenenza:
                             </p>
                         </div>
                         <div class="text">
-                            <h1>Livello 0:</h1>
+                            <h2>Livello 0:</h2>
                             <p>
                                 Seguo un gruppo e posso vedere nel Feed tutti i
                                 contenuti pubblicati dai membri senza poterne
@@ -312,21 +310,21 @@
                             </p>
                         </div>
                         <div class="text">
-                            <h1>Livello 1:</h1>
+                            <h2>Livello 1:</h2>
                             <p>
                                 Sono membro di un gruppo e posso creare
                                 contenuti al suo interno oltre che vederli.
                             </p>
                         </div>
                         <div class="text">
-                            <h1>Livello 2:</h1>
+                            <h2>Livello 2:</h2>
                             <p>
                                 Sono Admin di un gruppo posso quindi accettare
                                 nuovi membri, creare contenuti, bannare utenti.
                             </p>
                         </div>
                         <div class="text">
-                            <h1>Livello 3:</h1>
+                            <h2>Livello 3:</h2>
                             <p>
                                 Sono un Owner (ho creato un gruppo) quindi posso
                                 nominare degli admin, accettare persone, creare
@@ -378,5 +376,46 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="./js/index.js"></script>
-    
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org/",
+        "@type": "Organization",
+        "name": "Incloodo",
+        "alternateName": "Incloodo",
+        "legalName": "Incloodo S.r.l.",
+        "url": "https://incloodo.it/",
+        "logo": "https://incloodo.it/images/logo-incloodo.png",
+        "address": "Viale Luigi Majno 28, 20129 Milano"
+            [
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Milano",
+                "addressRegion": "Lombardia",
+                "postalCode": "20129",
+                "streetAddress": "Viale Luigi Majno 28",
+                "telephone": "+390287178674"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "IT",
+                "addressLocality": "Bari",
+                "addressRegion": "Puglia",
+                "postalCode": "70123",
+                "streetAddress": "Fiera del Levante, Viale Volga",
+                "telephone": "+390809904680"
+            }],
+        "sameAs": [
+            "https://www.facebook.com/incloodo",
+            "https://www.instagram.com/incloodo/",
+            "https://www.linkedin.com/company/54277181/"
+        ],
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "email": "info@incloodo.com",
+            "telephone": "+390287178674",
+            "contactType": "customer service"
+          }]
+        }
+    </script>
 </html>
